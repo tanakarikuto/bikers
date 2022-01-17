@@ -1,0 +1,10 @@
+<div class= "main users-show">
+  <div class= "col-md-offset-4 col-md-4 show-container">
+    <img src= "<%= "/images/#{@user.image_name}" %>">
+    <div class="text-center user">
+       <p><%= @user.name %></p>
+      <p><%= @user.email %></p>
+      <%= link_to("編集", "/users/#{@user.id}/edit") %>
+    </div>
+  </div>
+</div>

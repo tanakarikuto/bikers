@@ -6,6 +6,10 @@ h1, h2 {
   color: blue;
 }
 
+.btn-btn-top-blue {
+  color: blue;
+}
+
 
 
 .text-blue span { 
@@ -27,6 +31,7 @@ h1, h2 {
 }
 
 .top-hero-container {
+  margin-top: 40px;
   padding-top: 220px;
   h1 {
     font-size: 56px;
@@ -64,12 +69,48 @@ h1, h2 {
   background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
+  
 
   .users-new-container {
-    padding-top: 80px;
+   //margin-top: 220px;
 
     .form-group {
       margin-bottom: 20px;
     }
   }
 }
+
+.navbar-transparent {
+  margin-bottom: 0px;
+  background-color: rgba(0,0,0,0);
+  a {
+    color: #fff !important;
+  }
+
+  .navbar-brand {
+    padding: 0px;
+    margin-top: 15px;
+  }
+
+  img {
+    height: 40px;
+  }
+}
+
+/* show */
+.show-container {
+  margin-top: 350px;
+  font-size: 30px;
+}
+
+/* edit */
+.edit-container {
+  margin-top: 300px;
+  font-size: 25px;
+}
+
+.submit-btn { 
+  margin-top :15px;
+  text-align : center ; 
+}
+
