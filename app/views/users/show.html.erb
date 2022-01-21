@@ -1,6 +1,14 @@
 <div class= "main users-show">
   <div class= "col-md-offset-4 col-md-4 show-container">
-    <img src= "<%= "/images/#{@user.image_name}" %>">
+    <div class= "user-image">
+      <%#<p class="trim-image-to-circle"> #%>
+      <% if @user.image_name %>
+        <%= image_tag @user.image_name  %>
+      <% elsif %>
+        <%= image_tag "black-login-user.png"%>
+      <% end %>
+      </p>
+    </div>
     <div class="text-center user">
        <p><%= @user.name %></p>
       <p><%= @user.email %></p>

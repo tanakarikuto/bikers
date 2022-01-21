@@ -2,14 +2,15 @@
     <div class="col-md-offset-4 col-md-4 edit-container">
       <div class="form-head">
         <div class=" text-center user-form">
-          <%= form_tag ("/users/#{@user.id}/update") %>
-            <p>User name</p>
-             <input name="name" value="<%= @user.name %>">
-            <p>Image</p>
-              <input name="image", type="file">
-            <p>E-mail</p>
-             <input name="email", value="<%= @user.email %>">
-             <div class="submit-btn"><input type="submit", value="保存"></div>
+          <%= form_with URL: user_path, local: true do |f| %>
+          <%= f.label :name, "name" %>
+          <%= f.text_field :name, value: @user.name %>
+          <%= f.label :email, "email"%>
+          <%= f.text_field :email, value: @user.email %>
+           <%= f.label :img %>
+           <%= f.file_field :img %>
+           <%= f.submit "更新" %>
+          <% end %>
         </div>
       </div>
     </div>

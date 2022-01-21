@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   end 
   
   def create
-    @user = User.new(user_params, image_name: "black-login-user.png")
+    @user = User.new(user_params)
     if @user.save
       #roomができたら変更
       redirect_to root_path, success: "登録しました"
@@ -18,19 +18,23 @@ class UsersController < ApplicationController
     @user = User.find_by(id: params[:id])
   end
   
-  def update
-    @user = User.find_by(params[:id])
-    if @user.save
-      redirect_to root_path, success: "変更に成功しました"
-    else
-     flash.now[:danger] = "変更に失敗しました"
-     render :update
-    end
-  end
-  
   def edit
     @user = User.find_by(params[:id])
   end
+  
+  def update
+    #binding.pry
+    @user = User.find_by(params[:id])
+    @user.name = params[:name]
+    @user.email = params[:email]
+    if @user.save
+      redirect_to ("/users/#{@user.id}"), success: "変更に成功しました"
+    else
+     flash.now[:danger] = "変更に失敗しました"
+     render ("users/edit")
+    end
+  end
+  
   
   private
   def user_params
