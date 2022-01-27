@@ -10,5 +10,5 @@ class User < ApplicationRecord
   has_many :comments
   has_many :posts
   
-  mount_uploader :image, ImageUploader
+  mount_uploader :image_name, ImageUploader
 end

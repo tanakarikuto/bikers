@@ -2,7 +2,7 @@
     <div class="col-md-offset-4 col-md-4 edit-container">
       <div class="form-head">
         <div class=" text-center user-form">
-          <%= form_with URL: user_path, local: true do |f| %>
+          <%= form_with URL: user_path, method: "patch", local: true do |f| %>
           <%= f.label :name, "name" %>
           <%= f.text_field :name, value: @user.name %>
           <%= f.label :email, "email"%>

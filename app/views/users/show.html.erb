@@ -2,8 +2,8 @@
   <div class= "col-md-offset-4 col-md-4 show-container">
     <div class= "user-image">
       <%#<p class="trim-image-to-circle"> #%>
-      <% if @user.image_name %>
-        <%= image_tag @user.image_name  %>
+      <% if @user.image_name.url %>
+        <%= image_tag @user.image_name.url %>
       <% elsif %>
         <%= image_tag "black-login-user.png"%>
       <% end %>

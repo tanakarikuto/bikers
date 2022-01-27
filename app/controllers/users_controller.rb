@@ -23,8 +23,8 @@ class UsersController < ApplicationController
   end
   
   def update
-    #binding.pry
-    @user = User.find_by(params[:id])
+   # binding.pry
+    @user = User.find(params[:id])
     @user.name = params[:name]
     @user.email = params[:email]
     if @user.save
