@@ -21,7 +21,7 @@
         <ul class="nav navbar-nav navbar-right">
           <% if logged_in? %>
             <li>
-              <%= link_to "#" do %>
+              <%= link_to "/rooms" do %>
                 <%= image_tag "rooms.png" %>
               <% end %>
             </li>
@@ -55,5 +55,12 @@
    
    
     <%= yield %>
+    
+    <script>
+    $(function(){
+      $(".alert").fadeOut(5000);
+    });
+    </script>
+    
   </body>
 </html>

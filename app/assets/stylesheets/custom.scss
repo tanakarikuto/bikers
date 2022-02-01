@@ -1,5 +1,6 @@
 h1, h2 {
-  font-weight: 200;
+  font-weight: bold;
+  
 }
 
 .text-blue {
@@ -28,11 +29,11 @@ h1, h2 {
   background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
+  padding-top: 100px;
 }
 
 .top-hero-container {
-  margin-top: 40px;
-  padding-top: 220px;
+  padding-top: 260px;
   h1 {
     font-size: 56px;
     margin-bottom: 20px;
@@ -62,13 +63,15 @@ h1, h2 {
 
 .users-new-wrapper {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-image: image-url('top_background.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
+  padding-top: 100px;
+  padding-bottom: 50px;
   
 
   .users-new-container {
@@ -82,7 +85,7 @@ h1, h2 {
 
 .navbar-transparent {
   margin-bottom: 0px;
-  background-color: rgba(0,0,0,0);
+  background-color:gray;
   a {
     color: #fff !important;
   }
@@ -98,6 +101,9 @@ h1, h2 {
 }
 
 /* show */
+.users-show-wrapper {
+  background-color: grey;
+}
 .show-container {
   margin-top: 215px;
   font-size: 30px;
@@ -144,3 +150,125 @@ h1, h2 {
   text-align : center ; 
 }
 
+/*rooms#show*/
+.rooms-show-container {
+  margin-top: 300px;
+}
+
+.menu-space {
+  margin-top: 15px;
+}
+.menu-space2 {
+  margin-left: 15px;
+}
+
+.btn-box1 {
+    margin: 2em 0;
+    background: #FFBEDA;
+}
+.btn-box1 .box-title1 {
+    font-size: 1.2em;
+    background: #ff1c03;
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.btn-box1 p {
+    padding: 15px 20px;
+    margin: 0;
+}
+
+.btn-box2 {
+    margin: 2em 0;
+    background: #EDFFBE;
+}
+.btn-box2 .box-title2 {
+    font-size: 1.2em;
+    background: #B6FF01;
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.btn-box2 p {
+    padding: 15px 20px;
+    margin: 0;
+}
+
+.btn-box3 {
+    margin: 2em 0;
+    background: #BAD3FF;
+}
+.btn-box3 .box-title3 {
+    font-size: 1.2em;
+    background: #005FFF;
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.btn-box3 p {
+    padding: 15px 20px;
+    margin: 0;
+}
+
+.btn-box4 {
+    margin: 2em 0;
+    background: #FFC7AF;
+}
+.btn-box4 .box-title4 {
+    font-size: 1.2em;
+    background: #FF4F02;
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.btn-box4 p {
+    padding: 15px 20px;
+    margin: 0;
+}
+
+/*rooms-main-left/rightも4画面共通(purpose,start,end,type)*/
+
+/*rooms-main-left*/
+.left-side{
+  height: 100vh;
+  padding-top: 60px;
+  text-align: center;
+  background-color: #1e90ff;
+}
+.rooms-menu {
+  color: white;
+  font-family: 'Londrina Shadow', cursive;
+}
+.side-menu {
+  margin-top: 100px;
+  list-style: none;
+  font-size: 40px;
+  font-family: 'Londrina Shadow', cursive;
+}
+
+
+a {
+  color: white;
+}
+
+a:hover {
+  border: solid 2px white;
+  text-decoration:none;
+}
+
+
+/*rooms-main-right*/
+.right-side {
+  height: 100vh;
+  background-color: #87ceeb;
+}
