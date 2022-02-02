@@ -151,8 +151,11 @@ h1, h2 {
 }
 
 /*rooms#show*/
+.rooms-show-wrapper {
+  background-color: #e0ffff;
+}
 .rooms-show-container {
-  margin-top: 300px;
+  padding-top: 300px;
 }
 
 .menu-space {
@@ -171,13 +174,15 @@ h1, h2 {
     background: #ff1c03;
     padding: 4px;
     text-align: center;
-    color: #FFF;
+    color: #fff;
     font-weight: bold;
     letter-spacing: 0.05em;
+    font-family: 'Londrina Shadow', cursive;
 }
 .btn-box1 p {
     padding: 15px 20px;
     margin: 0;
+    color: black;
 }
 
 .btn-box2 {
@@ -192,10 +197,12 @@ h1, h2 {
     color: #FFF;
     font-weight: bold;
     letter-spacing: 0.05em;
+    font-family: 'Londrina Shadow', cursive;
 }
 .btn-box2 p {
     padding: 15px 20px;
     margin: 0;
+    color: black;
 }
 
 .btn-box3 {
@@ -210,11 +217,13 @@ h1, h2 {
     color: #FFF;
     font-weight: bold;
     letter-spacing: 0.05em;
+    font-family: 'Londrina Shadow', cursive;
 }
 
 .btn-box3 p {
     padding: 15px 20px;
     margin: 0;
+    color: black;
 }
 
 .btn-box4 {
@@ -229,11 +238,13 @@ h1, h2 {
     color: #FFF;
     font-weight: bold;
     letter-spacing: 0.05em;
+    font-family: 'Londrina Shadow', cursive;
 }
 
 .btn-box4 p {
     padding: 15px 20px;
     margin: 0;
+    color: black;
 }
 
 /*rooms-main-left/rightも4画面共通(purpose,start,end,type)*/
