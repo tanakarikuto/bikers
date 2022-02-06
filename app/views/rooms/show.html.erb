@@ -1,43 +1,20 @@
-  <div class= "rooms-show-wrapper">
-    <div class= "rooms-show-container">
-      <div class= "row">
-          <div class= "col-md-offset-3 col-md-3">
-            <div class= "btn-box1">
-             <div class= "box-title1">Purpose</div>
-             <a href= "/rooms/purpose">
-               <p>ツーリング目的が同じバイカーを探そう</p>
-             </a>
-            </div>
-          </div>
-          <div class= "col-md-3 menu-space2">
-            <div class= "btn-box2">
-             <div class= "box-title2">Start Time</div>
-             <a href= "/rooms/start_time">
-               <p>ツーリング開始時間が同じバイカーを探そう</p>
-             </a>
-            </div>
-          </div>
-         </div>
-      </div>
+<div class="rooms-show-wrapper">
+  <div class="rooms-show-container">
+    <div class="row">
+      <div class="col-md-3 left-side">
+        <p class="room-menu">Room Menu</p>
+      <% @rooms.each do |room| %>
       
-      <div class= "row menu-space">
-        <div class= "col-md-offset-3 col-md-3">
-          <div class= "btn-box3">
-            <div class= "box-title3">End Time</div>
-            <a href= "/rooms/end_time">
-             <p>ツーリング終了時間が同じバイカーを探そう</p>
-            </a>
-          </div>
-        </div>
-        <div class= "col-md-3 menu-space2">
-          <div class= "btn-box4">
-             <div class= "box-title4">Motorcycle Type</div>
-              <a href= "/rooms/motorcycle_type">
-               <p>愛車のジャンルが同じバイカーを探そう</p>
-              </a>
-          </div>
-        </div>
+        <ul class="side-menu">
+          <li style="margin-bottom:20px;">
+           <!--<a href="/rooms/:id"><%= room.title %></a> -->
+          </li>
+        </ul>
+       <% end %>
+      </div>
+      <div class="col-md-9 right-side bg-info">
+        iiiii
       </div>
     </div>
   </div>
-  
+</div>

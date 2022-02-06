@@ -14,10 +14,8 @@ Rails.application.routes.draw do
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
   
-  get "/rooms", to: "rooms#show"
-  get "/rooms/purpose", to: "rooms#purpose"
-  get "/rooms/start_time", to: "rooms#start_time"
-  get "/rooms/end_time", to: "rooms#end_time"
-  get "/rooms/motorcycle_type", to: "rooms#motorcycle_type"
+  get "/rooms", to: "rooms#index"
+  get "/rooms/:id", to: "rooms#show"
+ 
 end
 

@@ -14,6 +14,8 @@ ActiveRecord::Schema.define(version: 2022_01_17_150306) do
 
   create_table "comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "user_id"
+    t.integer "post_id"
+    t.string "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -29,10 +31,8 @@ ActiveRecord::Schema.define(version: 2022_01_17_150306) do
   create_table "rooms", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "purpose"
-    t.string "start_at"
-    t.string "finish_at"
-    t.string "motorcycle_type"
+    t.string "title"
+    t.text "description"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|

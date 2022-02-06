@@ -1,16 +1,11 @@
 class RoomsController < ApplicationController
   def index
+    @rooms = Room.all
   end
   
-  def purpose
+  def show
+    @rooms = Room.all
+    @room = Room.find(params[:id])
   end
   
-  def start_time
-  end
-  
-  def end_time 
-  end
-  
-  def motorcycle_type
-  end
 end

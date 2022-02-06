@@ -1,3 +1,11 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
 h1, h2 {
   font-weight: bold;
   
@@ -150,106 +158,8 @@ h1, h2 {
   text-align : center ; 
 }
 
-/*rooms#show*/
-.rooms-show-wrapper {
-  background-color: #e0ffff;
-}
-.rooms-show-container {
-  padding-top: 300px;
-}
-
-.menu-space {
-  margin-top: 15px;
-}
-.menu-space2 {
-  margin-left: 15px;
-}
-
-.btn-box1 {
-    margin: 2em 0;
-    background: #FFBEDA;
-}
-.btn-box1 .box-title1 {
-    font-size: 1.2em;
-    background: #ff1c03;
-    padding: 4px;
-    text-align: center;
-    color: #fff;
-    font-weight: bold;
-    letter-spacing: 0.05em;
-    font-family: 'Londrina Shadow', cursive;
-}
-.btn-box1 p {
-    padding: 15px 20px;
-    margin: 0;
-    color: black;
-}
-
-.btn-box2 {
-    margin: 2em 0;
-    background: #EDFFBE;
-}
-.btn-box2 .box-title2 {
-    font-size: 1.2em;
-    background: #B6FF01;
-    padding: 4px;
-    text-align: center;
-    color: #FFF;
-    font-weight: bold;
-    letter-spacing: 0.05em;
-    font-family: 'Londrina Shadow', cursive;
-}
-.btn-box2 p {
-    padding: 15px 20px;
-    margin: 0;
-    color: black;
-}
-
-.btn-box3 {
-    margin: 2em 0;
-    background: #BAD3FF;
-}
-.btn-box3 .box-title3 {
-    font-size: 1.2em;
-    background: #005FFF;
-    padding: 4px;
-    text-align: center;
-    color: #FFF;
-    font-weight: bold;
-    letter-spacing: 0.05em;
-    font-family: 'Londrina Shadow', cursive;
-}
-
-.btn-box3 p {
-    padding: 15px 20px;
-    margin: 0;
-    color: black;
-}
-
-.btn-box4 {
-    margin: 2em 0;
-    background: #FFC7AF;
-}
-.btn-box4 .box-title4 {
-    font-size: 1.2em;
-    background: #FF4F02;
-    padding: 4px;
-    text-align: center;
-    color: #FFF;
-    font-weight: bold;
-    letter-spacing: 0.05em;
-    font-family: 'Londrina Shadow', cursive;
-}
-
-.btn-box4 p {
-    padding: 15px 20px;
-    margin: 0;
-    color: black;
-}
-
 /*rooms-main-left/rightも4画面共通(purpose,start,end,type)*/
-
-/*rooms-main-left*/
+/*rooms-main-left
 .left-side{
   height: 100vh;
   padding-top: 60px;
@@ -275,11 +185,82 @@ a {
 a:hover {
   border: solid 2px white;
   text-decoration:none;
-}
+} */
 
 
-/*rooms-main-right*/
+/*rooms-main-right
 .right-side {
   height: 100vh;
   background-color: #87ceeb;
 }
+ */
+
+/*rooms-index*/
+.rooms-index-container {
+  padding-top: 270px;
+  height: 100vh;
+  background-image: image-url('top_background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.box {
+    margin: 2em 0;
+    background: #dcefff;
+}
+.box .box-title {
+    font-size: 1.4em;
+    background: #5fb3f5;
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    font-family: 'Londrina Shadow', cursive;
+}
+.box p {
+    padding: 15px 10px;
+    margin: 0;
+    text-align: center;
+}
+
+a {
+  color:black;
+}
+  
+a:hover {
+     text-decoration: none;
+  }
+  
+/*rooms-show-left*/
+  .left-side {
+    height: 100vh;
+    margin-top: 65px;
+    background-color: #1e90ff;
+  }
+ .room-menu {
+   margin-bottom: 100px;
+   font-size: 60px;
+   color: white;
+   font-family: 'Londrina Shadow', cursive;
+   text-align: center;
+ }
+  .side-menu {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    list-style: none;
+    
+  }
+  
+  
+  
+  /*rooms-show-right*/
+  .right-side {
+    height: 100vh;
+  }
+  
+ 

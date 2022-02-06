@@ -1,0 +1,16 @@
+<div class="rooms-index-wrapper">
+  <div class="rooms-index-container">
+    <div class="row">
+      <% @rooms.each do |room| %>
+      <div class="col-md-offset-2 col-md-3">
+        <div class="box">
+          <div class="box-title"><%= room.title%></div>
+            <a href= <%="/rooms/#{room.id}" %>>
+              <p><%= room.description %></p>
+            </a>
+        </div>
+      </div>
+    <% end %>
+    </div>
+  </div>
+</div>
