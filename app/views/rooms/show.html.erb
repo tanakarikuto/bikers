@@ -4,10 +4,10 @@
       <div class="col-md-3 left-side">
         <p class="room-menu">Room Menu</p>
       <% @rooms.each do |room| %>
-      
         <ul class="side-menu">
           <li style="margin-bottom:20px;">
-           <!--<a href="/rooms/:id"><%= room.title %></a> -->
+           <%= link_to room.title, "/rooms/#{room.id}" %>
+           
           </li>
         </ul>
        <% end %>
