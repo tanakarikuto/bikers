@@ -225,11 +225,9 @@ a:hover {
     padding: 15px 10px;
     margin: 0;
     text-align: center;
+    color: black;
 }
 
-a {
-  color:black;
-}
   
 a:hover {
      text-decoration: none;
@@ -253,7 +251,10 @@ a:hover {
     text-align: center;
     list-style: none;
     font-color: white
-    
+  }
+  
+  a {
+  color: white;
   }
   
   
@@ -262,19 +263,30 @@ a:hover {
     height: 100vh;
   }
   
-  .posts {
-    font-size: 20px;
-    height: 80px;
-    margin-top: 150px;
-   padding-left: 350px;
-    overflow: auto;
-  }
-  
  .contents-box {
-    //padding: 0.5em 1em;
-    //margin: 2em 0;
-    font-weight: bold;
+    width: 80%;
+    height: 300px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 150px;
     background-color: white;
-    border: solid 3px black;/*線*/
+    border: solid #d9edf7;/*線*/
     border-radius: 10px;/*角の丸み*/
+    overflow: scroll;
+}
+
+.posts {
+  text-align: left;
+  margin-left: 70px;
+  margin-bottom: 15px;
+  
+}
+
+.post-user-name {
+  font-weight: 600;
+}
+
+span {
+  color: gray;
+  margin-left: 15px;
 }

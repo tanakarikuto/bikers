@@ -12,13 +12,20 @@
        <% end %>
       </div>
       <div class="col-md-9 right-side bg-info">
-        <% @room.posts.each do |post| %>
-          <div class="contents-box">
+        <div class="contents-box">
+          <% @room.posts.each do |post| %>
             <div class="posts">
-             <%= post.content %>
+              <div class="post-user-name">
+               <%= post.user.name %>
+              </div>
+               <%= post.content %>
+                 <span><%= post.created_at.to_s(:datetime_jp) %></span>
+                 <div class="comment">
+                   <h6>コメントする</h6>
+                 </div>
             </div>
-          </div>
-        <% end %>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>
