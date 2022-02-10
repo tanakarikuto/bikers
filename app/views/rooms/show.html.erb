@@ -6,14 +6,19 @@
       <% @rooms.each do |room| %>
         <ul class="side-menu">
           <li style="margin-bottom:20px;">
-           <%= link_to room.title, "/rooms/#{room.id}" %>
-           
+           <%= link_to room.title, "/rooms/#{room.id}"%>
           </li>
         </ul>
        <% end %>
       </div>
       <div class="col-md-9 right-side bg-info">
-        iiiii
+        <% @room.posts.each do |post| %>
+          <div class="contents-box">
+            <div class="posts">
+             <%= post.content %>
+            </div>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
