@@ -265,7 +265,7 @@ a:hover {
   
  .contents-box {
     width: 80%;
-    height: 300px;
+    height: 400px;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 150px;
@@ -286,7 +286,28 @@ a:hover {
   font-weight: 600;
 }
 
-span {
+.time {
   color: gray;
   margin-left: 15px;
+}
+
+form {
+  margin-top: 40px;
+  margin-left: 10%;
+}
+.text_area {
+  font-size: 20px;
+  width: 70%;
+  height: 50px;
+  resize: none;
+  border-radius: 10px;
+}
+
+.btn {
+  width: 18%;
+  margin-bottom: 40px;
+  height: 50px;
+  boder-radius: 10px;
+　color: white;
+  
 }

@@ -8,7 +8,7 @@ class PostsController < ApplicationController
   end
   
   def create
-    @post = current_user.posts.new
+    @post = posts.new (content: params[:content])
      if @post.save
        redirect_to request.referer, success: 'ポストに成功しました' #←同じページにリダイレクト
      else

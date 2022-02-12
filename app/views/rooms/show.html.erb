@@ -19,11 +19,17 @@
                <%= post.user.name %>
               </div>
                <%= post.content %>
-                 <span><%= post.created_at.to_s(:datetime_jp) %></span>
+                 <span class="time"><%= post.created_at.to_s(:datetime_jp) %></span>
                  <div class="comment">
                    <h6>コメントする</h6>
                  </div>
             </div>
+          <% end %>
+        </div>
+        <div class="posts-create">
+          <%= form_with model: @post , local: true do |f| %>
+            <%= f.text_area name="content", class: 'text_area' %>
+            <%= f.submit "投稿", class: 'btn' %>
           <% end %>
         </div>
       </div>

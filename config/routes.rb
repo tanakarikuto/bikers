@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   
   get "/rooms", to: "rooms#index"
   get "/rooms/:id", to: "rooms#show"
+  post "/rooms/:id", to: "posts#create"
  
 end
 
