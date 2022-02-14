@@ -83,7 +83,7 @@ h1, h2 {
   
 
   .users-new-container {
-   //margin-top: 220px;
+   
 
     .form-group {
       margin-bottom: 20px;
@@ -116,25 +116,15 @@ h1, h2 {
   margin-top: 215px;
   font-size: 30px;
   }
+
+.user_image {
+  border-radius: 50%;
+  border: solid 1px black;
+  padding: 5px;
+  width:  100px;       /* ※縦横を同値に */
+  height: 100px; 
+}
   
-/*画像を丸く表示 border-radius: 10px?
-/*一つ目二重に表示されちゃう
-// .trim-image-to-circle {
-//     background-image: url("black-login-user.png");  /* 表示する画像 */
-//     width:  180px;       /* ※縦横を同値に */
-//     height: 180px;       /* ※縦横を同値に */
-//     border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
-//     background-position: center center;  /* 横長画像の左上を基準に表示 */
-//     display: inline-block;  /* 複数の画像を横に並べたい場合 */
-//     border: 4px solid #black
-// }
-/*二つ目全部の画像が丸くなる
-//img {
-//  border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
-  //width: 100px;  /* 縦横を同じ値にする */
-  //height: 100px;  /* 縦横を同じ値にする */
-  //object-fit: cover; /* 縦横比固定したまま上2つの縦横の範囲内に収まるように配置する */
-//}
 
 .trim-image-to-circle {
    width:  180px;       /* ※縦横を同値に */
@@ -143,6 +133,10 @@ h1, h2 {
      background-position: center center;  /* 横長画像の左上を基準に表示 */
      display: inline-block;  /* 複数の画像を横に並べたい場合 */
      border: 4px solid #black
+}
+
+a.edit {
+  color: black;
 }
 
 

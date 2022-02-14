@@ -27,7 +27,8 @@
           <% end %>
         </div>
         <div class="posts-create">
-          <%= form_with model: @post , local: true do |f| %>
+        
+          <%= form_with url: create_post_path(room_id: @room.id), local: true do |f| %>
             <%= f.text_area name="content", class: 'text_area' %>
             <%= f.submit "投稿", class: 'btn' %>
           <% end %>
