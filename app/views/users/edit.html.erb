@@ -1,11 +1,11 @@
   <div class="main user-edit">
     <div class="col-md-offset-4 col-md-4 edit-container">
       <div class="form-head">
-        <div class=" text-center user-form">
+        <div class=" text-center user-edit-form">
           <%= form_with URL: user_path, method: "patch", local: true do |f| %>
-          <%= f.label :name, "name" %>
+          <%= f.label :user_name%>
           <%= f.text_field :name, value: @user.name %>
-          <%= f.label :email, "email"%>
+          <%= f.label :email%>
           <%= f.text_field :email, value: @user.email %>
            <%= f.label :img %>
            <%= f.file_field :img %>

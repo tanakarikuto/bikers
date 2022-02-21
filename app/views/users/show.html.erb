@@ -1,7 +1,6 @@
 <div class= "text-center users-show-wrapper">
   <div class= "col-md-offset-4 col-md-4 show-container">
     <div class= "user-image">
-      <%#<p class="trim-image-to-circle"> #%>
       <% if @user.image_name.url %>
         <%= image_tag @user.image_name.url, class: 'user_image'%>
       <% elsif %>
@@ -12,7 +11,7 @@
     <div class="user">
        <p><%= @user.name %></p>
       <p><%= @user.email %></p>
-      <%= link_to("編集", "/users/#{@user.id}/edit", class:'edit')%>
+      <%= link_to("編集", "/users/#{@user.id}/edit", class:'update')%>
     </div>
   </div>
 </div>

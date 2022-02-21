@@ -126,16 +126,8 @@ h1, h2 {
 }
   
 
-.trim-image-to-circle {
-   width:  180px;       /* ※縦横を同値に */
-     height: 180px;       /* ※縦横を同値に */
-     border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
-     background-position: center center;  /* 横長画像の左上を基準に表示 */
-     display: inline-block;  /* 複数の画像を横に並べたい場合 */
-     border: 4px solid #black
-}
 
-a.edit {
+a.update {
   color: black;
 }
 
@@ -151,43 +143,6 @@ a.edit {
   margin-top :15px;
   text-align : center ; 
 }
-
-/*rooms-main-left/rightも4画面共通(purpose,start,end,type)*/
-/*rooms-main-left
-.left-side{
-  height: 100vh;
-  padding-top: 60px;
-  text-align: center;
-  background-color: #1e90ff;
-}
-.rooms-menu {
-  color: white;
-  font-family: 'Londrina Shadow', cursive;
-}
-.side-menu {
-  margin-top: 100px;
-  list-style: none;
-  font-size: 40px;
-  font-family: 'Londrina Shadow', cursive;
-}
-
-
-a {
-  color: white;
-}
-
-a:hover {
-  border: solid 2px white;
-  text-decoration:none;
-} */
-
-
-/*rooms-main-right
-.right-side {
-  height: 100vh;
-  background-color: #87ceeb;
-}
- */
 
 /*rooms-index*/
 .rooms-index-container {
