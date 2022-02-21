@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get "/rooms", to: "rooms#index"
   get "/rooms/:id", to: "rooms#show"
   post "/posts/:room_id", to: "posts#create", as: :create_post
+  post "/comments", to: "comments#create", as: :create_comment
  
 end
 

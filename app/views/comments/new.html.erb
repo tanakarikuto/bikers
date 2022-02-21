@@ -1,0 +1,17 @@
+<div class="comments_wrapper">
+  <div class="comment_container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 comment_form">
+        <div class="comment_form">
+          <%= form_with model: @comment do |f| %>
+          <div class="form_group">
+            <%= f.label :content %>
+            <%= f.text_area :content %>
+          </div>
+          <%= f.submit 'コメントする', class: "btn" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

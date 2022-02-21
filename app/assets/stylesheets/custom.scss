@@ -305,3 +305,26 @@ form {
 　color: white;
   
 }
+/*comment_area*/
+.comment_area {
+  width: 367px;
+  height: 29px;
+  resize: none;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.comments_box {
+  height: 100px;
+  width: 70%;
+  border: solid 1px black;
+  border-radius: 10px;
+  overflow: scroll;
+}
+.comments {
+  margin-bottom: 15px;
+  margin-left: 50px;
+}
+

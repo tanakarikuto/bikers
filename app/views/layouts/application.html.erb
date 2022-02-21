@@ -15,8 +15,14 @@
    
    <nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
       <div class="container">
-        <%= link_to root_path do %>
-          <span><%= image_tag "B.png", class: "navbar-brand" %></span>
+        <% if @current_user %>
+          <%= link_to rooms_path do %>
+           <span><%= image_tag "B.png", class: "navbar-brand" %></span>
+          <% end %>
+        <% else %>
+          <%= link_to root_path do %>
+           <span><%= image_tag "B.png", class: "navbar-brand" %></span>
+          <% end %>
         <% end %>
         <ul class="nav navbar-nav navbar-right">
           <% if logged_in? %>

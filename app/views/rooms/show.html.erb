@@ -13,23 +13,37 @@
       </div>
       <div class="col-md-9 right-side bg-info">
         <div class="contents-box">
+          
           <% @room.posts.each do |post| %>
             <div class="posts">
               <div class="post-user-name">
                <%= post.user.name %>
               </div>
-               <%= post.content %>
-                 <span class="time"><%= post.created_at.to_s(:datetime_jp) %></span>
-                 <div class="comment">
-                   <h6>コメントする</h6>
-                 </div>
+              <%= post.content %> <span class="time"><%= post.created_at.to_s(:datetime_jp) %></span>
+                  
+                   <%#コメントボタンを押すとcomments/newのページに飛ぶ方= link_to("コメントする", comments_new_path)%>
+                    <div class="form-group comment">
+                      <%= form_with url: create_comment_path(room_id: @room.id, post_id: post.id), local: true do |f| %>
+                        <%= f.text_area :content, placeholder: "コメントを追加...", class: "comment_area" %>
+                        <%= f.submit "コメントを追加"%>
+                      <% end %>
+                    </div>
+                    <div class="comments_box">
+                      <% post.comments.each do |comment| %>
+                        <div class="comments">
+                          <div class="post-user-name">
+                          <%= comment.user.name %>
+                          </div>
+                          <%= comment.content %> <span class="time"><%= post.created_at.to_s(:datetime_jp) %></span>
+                        </div>
+                      <% end %>
+                    </div>
             </div>
           <% end %>
         </div>
         <div class="posts-create">
-        
           <%= form_with url: create_post_path(room_id: @room.id), local: true do |f| %>
-            <%= f.text_area name="content", class: 'text_area' %>
+            <%= f.text_area name="content", placeholder: "投稿する", class: 'text_area' %>
             <%= f.submit "投稿", class: 'btn' %>
           <% end %>
         </div>
