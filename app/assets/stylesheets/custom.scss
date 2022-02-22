@@ -120,7 +120,7 @@ h1, h2 {
 .user_image {
   border-radius: 50%;
   border: solid 1px black;
-  padding: 5px;
+ 
   width:  100px;       /* ※縦横を同値に */
   height: 100px; 
 }
@@ -214,10 +214,10 @@ a:hover {
   
  .contents-box {
     width: 80%;
-    height: 400px;
+    height: 470px;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 150px;
+    margin-top: 120px;
     background-color: white;
     border: solid #d9edf7;/*線*/
     border-radius: 10px;/*角の丸み*/
@@ -241,9 +241,10 @@ a:hover {
 }
 
 form {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-left: 10%;
 }
+
 .text_area {
   font-size: 20px;
   width: 70%;
@@ -267,12 +268,8 @@ form {
   resize: none;
 }
 
-form {
-  margin-top: 20px;
-}
-
 .comments_box {
-  height: 100px;
+  height: 130px;
   width: 70%;
   border: solid 1px black;
   border-radius: 10px;

@@ -28,7 +28,8 @@
                         <%= f.submit "コメントを追加"%>
                       <% end %>
                     </div>
-                    <div class="comments_box">
+                    <% if post.comments.present? %>
+                     <div class="comments_box">
                       <% post.comments.each do |comment| %>
                         <div class="comments">
                           <div class="post-user-name">
@@ -37,7 +38,8 @@
                           <%= comment.content %> <span class="time"><%= comment.created_at.to_s(:datetime_jp) %></span>
                         </div>
                       <% end %>
-                    </div>
+                     </div>
+                    <% end %>
             </div>
           <% end %>
         </div>

@@ -25,8 +25,8 @@ class UsersController < ApplicationController
   def update
    # binding.pry
     @user = User.find(params[:id])
-    @user.name = params[:name]
-    @user.email = params[:email]
+    @user.assign_attributes(user_update_params)
+    
     if @user.save
       redirect_to ("/users/#{@user.id}"), success: "変更に成功しました"
     else
@@ -39,5 +39,9 @@ class UsersController < ApplicationController
   private
   def user_params
     params.require(:user).permit(:name, :email, :password, :password_confirmation)
+  end
+  
+  def user_update_params
+     params.require(:user).permit(:name, :email, :image_name)
   end
 end
