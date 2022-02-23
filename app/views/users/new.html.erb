@@ -5,6 +5,7 @@
         <h1 class="text-center text-white">Sign up</h1>
         <%= form_for @user do |f| %>
           <div class="form-group">
+            <%# binding.pry%>
             <%= f.label :name, class: 'text-white' %>
             <%= f.text_field :name, class: 'form-control' %>
           </div>
