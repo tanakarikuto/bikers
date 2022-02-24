@@ -15,7 +15,7 @@
    
    <nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
       <div class="container">
-        <% if @current_user %>
+        <% if current_user %>
           <%= link_to rooms_path do %>
            <span><%= image_tag "B.png", class: "navbar-brand" %></span>
           <% end %>
@@ -38,7 +38,11 @@
             </li>
             <li>
               <%=link_to user_path(current_user.id) do %>
-              <%= image_tag "login-user.png"%>
+                <% if current_user.image_name.url %>
+                  <%= image_tag current_user.image_name.url, class: 'navbar-user-image'%>
+                <% else %>
+                  <%= image_tag "black-login-user.png", class: 'user_image' %>
+                <% end %>
               <% end %>
             </li>
           <% else %>
