@@ -89,3 +89,5 @@ gem 'carrierwave'
 #gem 'pry-stack_explorer'
 
 gem 'fog-aws'
+
+gem 'rails_12factor', group: :production
